@@ -11,6 +11,7 @@ import EditRecipeForm from './components/EditRecipeForm';
 import Home from './components/Home';
 import NewRecipeForm from './components/NewRecipeForm';
 import NavBar from './components/NavBar';
+import LogIn from './components/LogIn';
 		
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
 					<Switch>
 						<Route exact path='/' component={Home}/>
 						<Route path='/recipebox' component={RecipeBox}/>
+						<Route path='/login' component={LogIn}/>
 						<Route path='/category/:catid/newrecipe' render={props => {
 
 						 		return (
