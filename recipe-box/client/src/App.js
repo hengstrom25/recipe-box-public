@@ -12,6 +12,7 @@ import Home from './components/Home';
 import NewRecipeForm from './components/NewRecipeForm';
 import NavBar from './components/NavBar';
 import LogIn from './components/LogIn';
+import SignUp from'./components/SignUp';
 		
 
 class App extends Component {
@@ -27,6 +28,7 @@ class App extends Component {
 						<Route exact path='/' component={Home}/>
 						<Route path='/recipebox' component={RecipeBox}/>
 						<Route path='/login' component={LogIn}/>
+						<Route path='/signup' component={SignUp}/>
 						<Route path='/category/:catid/newrecipe' render={props => {
 
 						 		return (

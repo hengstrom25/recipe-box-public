@@ -1,12 +1,7 @@
 class UsersController < ApplicationController
+before_action :logged_in?
 #skip_before_action :verify_authenticity_token
 
-	def index
-		#categories = Category.where(user_id: current_user.id)
-		users = User.all
-		render json: users
-	end
-	
 	def show
 		user = User.find_by(id: params[:id])
 		render json: user
@@ -17,8 +12,12 @@ class UsersController < ApplicationController
 	end
 	
 	def create
-    	user = User.create
-    	render json: user, status: 201
+    	user = User.new(user_params)
+    	user.save
+    	if user
+    		session(:user_id) = user.id
+    		render json: user, status: 201
+    	end
 	end
 	
 	private
