@@ -18,7 +18,7 @@ export const resetSignUpForm = () => {
 	}
 }
 
-export const addUserDb = (user, history) => {
+/*export const addUserDb = (user, history) => {
 	return dispatch => {
 		return fetch(`http://localhost:3001/categories/${catid}/recipes`, {
 			method: 'POST',
@@ -34,4 +34,4 @@ export const addUserDb = (user, history) => {
 			})
 			.catch(error => console.log(error))
 	}
-}
+}*/
