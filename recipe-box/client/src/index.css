@@ -24,6 +24,10 @@ code {
   	width: 500px;
 }
 
+.recipe_name {
+	font_size: 14px;
+}
+
 .category_card {
 	font-family: 'Patrick Hand SC', cursive;
 }
