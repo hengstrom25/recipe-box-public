@@ -36,13 +36,13 @@ class SignUp extends Component {
 						/>
 					</label>
 					</div>
-					<div className="username">
+					<div className="email">
 					<label> 
 						recipe:
 						<textarea
 							type="text"
-							name="username"
-							value={this.props.formData.username}
+							name="email"
+							value={this.props.formData.email}
 							onChange={this.handleChange}
 						/>
 					</label>
