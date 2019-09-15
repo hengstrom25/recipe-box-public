@@ -16,7 +16,7 @@ class NavBar extends Component {
 		
 		return (
 			<div className="navbar">
-				<a className="home" href="http://localhost:3000/recipebox">Recipe Box</a>
+				<a className="home margin_left" href="http://localhost:3000/recipebox">Recipe Box</a>
 			<ul>
 				{categories.map(category => (
 					<li key={category.id}>

@@ -46,6 +46,14 @@ code {
 	width: 60%;
 }
 
+.margin_left {
+	margin-left: 20px
+}
+
+.margin_top {
+	margin-top: 10px
+}
+
 .recipe_form {
 	font-family: 'Patrick Hand SC', cursive;
 }

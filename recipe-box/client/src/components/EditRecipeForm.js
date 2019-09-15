@@ -33,7 +33,7 @@ class EditRecipeForm extends Component {
 		<div>
 			<h2 className="diner_style">Edit Recipe</h2>
 			<form onSubmit={e => this.handleOnSubmit(e)}>
-					<div className="recipe_form">
+					<div className="recipe_form margin_left">
 					<label> 
 						name:
 						<input
@@ -44,7 +44,7 @@ class EditRecipeForm extends Component {
 						/>
 					</label>
 					</div>
-					<div className="recipe_form">
+					<div className="recipe_form margin_left margin_top">
 					<label> 
 						recipe:
 						<textarea
@@ -55,7 +55,7 @@ class EditRecipeForm extends Component {
 						/>
 					</label>
 					</div>
-					<div className="recipe_form">
+					<div className="recipe_form margin_left margin_top">
 					<label> 
 						notes:
 						<textarea
@@ -66,7 +66,7 @@ class EditRecipeForm extends Component {
 						/>
 					</label>
 					</div>
-				<div>
+				<div className="margin_left margin_top">
 					<button type="submit">Save</button>
 				</div>
 			</form>

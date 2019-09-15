@@ -25,9 +25,9 @@ class RecipeForm extends Component {
 	
 	return (
 		<div>
-			<h2 className="diner_style">Recipe</h2>
+			<h2 className="diner_style margin_left">Recipe</h2>
 			<form onSubmit={e => this.handleOnSubmit(e)}>
-					<div className="recipe_form">
+					<div className="recipe_form margin_left">
 					<label> 
 						name:
 						<input
@@ -38,7 +38,7 @@ class RecipeForm extends Component {
 						/>
 					</label>
 					</div>
-					<div className="recipe_form">
+					<div className="recipe_form margin_left margin_top">
 					<label> 
 						recipe:
 						<textarea
@@ -49,7 +49,7 @@ class RecipeForm extends Component {
 						/>
 					</label>
 					</div>
-					<div className="recipe_form">
+					<div className="recipe_form margin_left margin_top">
 					<label> 
 						notes:
 						<textarea
@@ -60,7 +60,7 @@ class RecipeForm extends Component {
 						/>
 					</label>
 					</div>
-				<div>
+				<div className="margin_left margin_top">
 					<button type="submit">Save</button>
 				</div>
 			</form>

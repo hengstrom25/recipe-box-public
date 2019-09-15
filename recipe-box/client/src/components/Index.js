@@ -6,7 +6,7 @@ const Index = () => {
 
 	return (
 		<div>
-			<p className="description_small">Can't remember what recipe you're looking? 
+			<p className="description_small margin_left">Can't remember what recipe you're looking? 
 			Click <Link to="/recipes">here</Link> to see all of the recipes!</p>
 		</div>
 			)

@@ -17,8 +17,8 @@ class CategoryCard extends Component {
 			
 			return (
 				<div>
-					<p className="diner_style">category: {category.name}</p>
-					<ul className="category_card">
+					<p className="diner_style margin_left">category: {category.name}</p>
+					<ul className="category_card margin_top">
 						{recipes.map(recipe => {
 							if (recipe.category_id == id) {
 								return (
@@ -29,7 +29,7 @@ class CategoryCard extends Component {
 						})}
 					</ul>
 					{withAddButton &&
-						<p className="category_card"><Link to={`/category/${id}/newrecipe`}>Add New Recipe</Link></p>
+						<p className="category_card margin_left"><Link to={`/category/${id}/newrecipe`}>Add New Recipe</Link></p>
 					}
 				</div>	
 			)

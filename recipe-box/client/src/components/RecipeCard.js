@@ -18,7 +18,7 @@ class RecipeCard extends Component {
 		const { recipe, category, history } = this.props;
 		
 		return (
-			<div className='recipe_card'>
+			<div className='recipe_card margin_left'>
 				<p>category: {category.name}</p>
 				<p>name: {recipe.name}</p>
 				<p>recipe: <HyperText>{recipe.recipe_field}</HyperText></p>
