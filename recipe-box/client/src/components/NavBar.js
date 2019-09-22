@@ -23,7 +23,9 @@ class NavBar extends Component {
 						<Link to={`/category/${category.id}`}>{category.name}</Link>
 					</li>
 				))}
-				<Link to={`/recipes`}>Index</Link>
+				<li>
+					<Link to={`/recipes`}>Index</Link>
+				</li>
 			</ul>
 			</div>
 		)
