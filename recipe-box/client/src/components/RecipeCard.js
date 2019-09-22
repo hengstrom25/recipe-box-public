@@ -25,11 +25,11 @@ class RecipeCard extends Component {
 				<p>notes: {recipe.notes}</p>
 				<button onClick={() => {
 					history.push('/recipes/' + recipe.id + '/edit')
-					}}>Edit Recipe</button>
+					}}>Edit</button>
 				<button onClick={() => {
 					this.props.deleteRecipe(recipe.id)
 					history.push('/category/' + recipe.category_id)
-					}}>Delete Recipe</button>
+					}}>Delete</button>
 			</div>
 		)
 	}
