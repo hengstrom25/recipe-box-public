@@ -19,8 +19,8 @@ class RecipeCard extends Component {
 		
 		return (
 			<div className='recipe_card margin_left'>
-				<p>category: {category.name}</p>
 				<p className="diner_style recipe_name">{recipe.name}</p>
+				<p>{category.name}</p>
 				<p>recipe: <HyperText>{recipe.recipe_field}</HyperText></p>
 				<p>notes: {recipe.notes}</p>
 				<button onClick={() => {
