@@ -68,6 +68,7 @@ class EditRecipeForm extends Component {
 					</div>
 				<div className="margin_left margin_top">
 					<button type="submit">Save</button>
+					<button type="submit">Cancel</button>
 				</div>
 			</form>
 		</div>
