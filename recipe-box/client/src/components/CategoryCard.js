@@ -17,7 +17,7 @@ class CategoryCard extends Component {
 			
 			return (
 				<div>
-					<p className="diner_style margin_left">category: {category.name}</p>
+					<p className="diner_style margin_left">{category.name}</p>
 					<ul className="category_card margin_top">
 						{recipes.map(recipe => {
 							if (recipe.category_id == id) {
